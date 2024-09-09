@@ -97,7 +97,7 @@ $nErr = ErroresAplic::NO_FIRMADO;
 	/*Para permitir la llamada desde otro lugar, en este caso Node.js*/
 	header('Access-Control-Allow-Origin: *');
 	header('Access-Control-Allow-Methods: POST');
-	header("Access-Control-Allow-Headers: Content-Type, tokenAut");
+	header("Access-Control-Allow-Headers: Content-Type, Tokenaut");
 	//Retornar JSON a quien hizo la llamada
 	header('Content-type: application/json');
 	echo $sJsonRet;
