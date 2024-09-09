@@ -14,9 +14,9 @@ $sJsonRet = "";
 $oErr = null;
 
 $cabeceras = apache_request_headers();
-if (isset($cabeceras["tokenaut"]) && !empty($cabeceras["tokenaut"])){
+if (isset($cabeceras["Tokenaut"]) && !empty($cabeceras["Tokenaut"])){
     //Verificar que sea paciente, requiere las variables de sesión
-    session_id($cabeceras["tokenaut"]);
+    session_id($cabeceras["Tokenaut"]);
     session_start();
     if (isset($_SESSION["oFirmado"]) && is_a($_SESSION["oFirmado"],'Paciente')){
 try {                
@@ -94,7 +94,7 @@ if ($nErr == -1) {
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 
-header("Access-Control-Allow-Headers: Content-Type, tokenaut");
+header("Access-Control-Allow-Headers: Content-Type, Tokenaut");
 // Retornar JSON a quien hizo la llamada
 header('Content-type: application/json');
 echo $sJsonRet;
