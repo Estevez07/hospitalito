@@ -180,6 +180,3 @@ private ? string $fotoLesiones;
      }
 
 }
-?>
-
-
