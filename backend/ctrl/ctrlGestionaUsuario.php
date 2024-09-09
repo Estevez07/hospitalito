@@ -171,4 +171,3 @@ header('Access-Control-Allow-Methods: POST');
 header('Content-type: application/json');
 
 echo $sJsonRet;
-?>

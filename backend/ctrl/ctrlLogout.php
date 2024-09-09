@@ -26,4 +26,3 @@ session_start(); //Le avisa al servidor que va a utilizar sesiones
 	//Retornar JSON a quien hizo la llamada
 	header('Content-type: application/json');
 	echo $sJsonRet;
-?>

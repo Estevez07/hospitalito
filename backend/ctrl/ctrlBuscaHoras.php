@@ -102,4 +102,3 @@ header("Access-Control-Allow-Headers: Content-Type, Tokenaut");
 // Retornar JSON a quien hizo la llamada
 header('Content-type: application/json');
 echo $sJsonRet;
-?>

@@ -119,4 +119,3 @@ header("Access-Control-Allow-Headers: Content-Type, Tokenaut");
 header('Content-type: application/json');
 
 echo $sJsonRet;
-?>

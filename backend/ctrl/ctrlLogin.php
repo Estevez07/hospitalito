@@ -97,4 +97,3 @@ $oErr = null;
 	//Retornar JSON a quien hizo la llamada
 	header('Content-type: application/json');
 	echo $sJsonRet;
-?>

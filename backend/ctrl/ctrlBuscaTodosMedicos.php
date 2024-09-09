@@ -80,4 +80,3 @@ if (isset($cabeceras["Tokenaut"]) && !empty($cabeceras["Tokenaut"])){
 	//Retornar JSON a quien hizo la llamada
 	header('Content-type: application/json');
 	echo $sJsonRet;
-?>

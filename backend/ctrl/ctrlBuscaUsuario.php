@@ -101,4 +101,3 @@ $nErr = ErroresAplic::NO_FIRMADO;
 	//Retornar JSON a quien hizo la llamada
 	header('Content-type: application/json');
 	echo $sJsonRet;
-?>
