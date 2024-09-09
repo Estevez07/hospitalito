@@ -10,11 +10,15 @@
  private $oConexion=null; 
 		/*Realiza la conexión a la base de datos*/
      	function conectar(){
+	$host = 'dpg-crf3utjqf0us738g4n0g-a.oregon-postgres.render.com';
+        $port = '5432';
+        $dbname = 'hospitalito';
+        $user = 'admin_hospitalito';
+        $password = 'U3R0bGPwfeOAkEmWxdveXVZX1aviAEhT';
 		$bRet = false;
 			try{
-				$this->oConexion = new PDO("pgsql:dbname=hospitalito; host=localhost; user=postgres; password=Luis17461"); 
-				//$this->oConexion = new PDO("mysql:host=localhost;dbname=hospitalito","root","",array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'")); 
-				
+				 $this->oConexion = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $password);
+           
 				//Configura la conexión para que lance excepción en caso de errores
 				$this->oConexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				$bRet = true;
