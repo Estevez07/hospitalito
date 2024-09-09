@@ -15,9 +15,9 @@ $sJsonRet = "";
 $oErr = null;
 	
     $cabeceras = apache_request_headers();
-if (isset($cabeceras["tokenaut"]) && !empty($cabeceras["tokenaut"])){
+if (isset($cabeceras["Tokenaut"]) && !empty($cabeceras["Tokenaut"])){
     //Verificar que sea paciente, requiere las variables de sesión
-    session_id($cabeceras["tokenaut"]);
+    session_id($cabeceras["Tokenaut"]);
     session_start();
     if (isset($_SESSION["oFirmado"]) && (is_a($_SESSION["oFirmado"],'Paciente')||is_a($_SESSION["oFirmado"],'Medico'))){
     /*Verifica que hayan llegado los datos*/
