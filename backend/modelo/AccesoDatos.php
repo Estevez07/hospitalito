@@ -10,15 +10,15 @@
  private $oConexion=null; 
 		/*Realiza la conexión a la base de datos*/
      	function conectar(){
-	$host = 'dpg-crf3utjqf0us738g4n0g-a.oregon-postgres.render.com';
+	$host = 'dpg-ct3lo9u8ii6s73d7i3t0-a.oregon-postgres.render.com';
         $port = '5432';
-        $dbname = 'hospitalito';
+        $dbname = 'hospitalito_ce0k';
         $user = 'admin_hospitalito';
-        $password = 'U3R0bGPwfeOAkEmWxdveXVZX1aviAEhT';
+        $password = 'XENWNNGqmvN5yaHLOKAa2S5ver8UEc9B';
 		$bRet = false;
 			try{
-				 //$this->oConexion = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $password);
-           	                 $this->oConexion = new PDO("pgsql:dbname=hospitalito; host=192.168.1.142; user=postgres; password=Luis17461"); 
+				 $this->oConexion = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $password);
+           	                 //$this->oConexion = new PDO("pgsql:dbname=hospitalito; host=localhost; user=postgres; password=Luis17461"); 
 				//Configura la conexión para que lance excepción en caso de errores
 				$this->oConexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				$bRet = true;
