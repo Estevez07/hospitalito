@@ -18,7 +18,7 @@
 		$bRet = false;
 			try{
 				 //$this->oConexion = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $password);
-           	                 $this->oConexion = new PDO("pgsql:dbname=hospitalito; host=localhost; user=postgres; password=Luis17461"); 
+           	                 $this->oConexion = new PDO("pgsql:dbname=hospitalito; host=192.168.1.142; user=postgres; password=Luis17461"); 
 				//Configura la conexión para que lance excepción en caso de errores
 				$this->oConexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				$bRet = true;
